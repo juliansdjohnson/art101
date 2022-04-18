@@ -1,5 +1,5 @@
 #my-portrait {
-  width: 500px
+  width: 500px;
 }
 
 #content {
@@ -7,6 +7,23 @@
   flex-direction: column;
   align-items: center;
   justify-content:space-between;
+
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  color:floralwhite;
+  background-color: black;
+  animation: pulseboxanim 5s ease-in-out infinite;
+  box-shadow: #FFE0D8 0px 0px 5px;
+
+  padding-top: auto;
+  padding-bottom: 20px;
+}
+
+.pulse {
+  animation: pulseanim 5s ease-in-out infinite;
 }
 
 #bio {
@@ -17,8 +34,24 @@ div.labs-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #FFE0D8;
+  text-shadow: #FFE0D8 0px 0px 2px;
+  animation: pulseanim 5s ease-in-out infinite;
 }
 
 h2 + ul {
   margin-top: -10px;
+}
+
+@keyframes pulseanim {
+  50% {
+    color: #FFBCAA;
+    text-shadow: #FFBCAA 1px 1px 6px;
+  }
+}
+
+@keyframes pulseboxanim {
+  50% {
+    box-shadow: 0px 0px 15px #FFBCAA;
+  }
 }
