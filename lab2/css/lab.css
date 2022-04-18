@@ -1,0 +1,29 @@
+h1 {
+  color: chartreuse;
+  font-size: 1000%;
+  font-family: "impact";
+  text-align:right;
+}
+
+p {
+  font-family: "brush script mt";
+  text-indent: 20px;
+  margin-left: 10px;
+  font-size: 300%;
+  color: cyan;
+  background-color: fuchsia;
+}
+
+body {
+  background-color: indigo;
+}
+
+#content {
+  background-color: darkviolet;
+  width:90vw;
+  min-height: 300px;
+  padding: 10px;
+  margin: auto;
+  border: dotted 10px cyan;
+  font-size: 20px;
+}
