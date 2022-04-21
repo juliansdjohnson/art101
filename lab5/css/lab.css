@@ -1,0 +1,46 @@
+#lab5-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+  text-decoration: underline;
+  margin-left:-10px;
+  margin-right:-10px;
+  background-color: #012456;
+  color: #FCF5F2;
+}
+
+h2 {
+  font-size: 22pt;
+}
+
+body {
+  background-color: #b8b8ff;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+  font-size: 15pt;
+  margin-top: -20px;
+}
+
+h2 + p {
+  margin-bottom: 40px;
+}
+
+.output {
+    border:2px solid #3083DC;
+    box-shadow: 0 0 10px #3083DC;
+    background-color:#012456;
+    width:300px;
+    overflow:auto;
+    padding:10px;
+    border-radius:10px;
+    font-family: consolas,monaco,monospace;
+    font-size:14pt;
+    color: white;
+}
