@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 6: Arrays and Objects</title>
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+</head>
+<body>
+	<div id="lab7-content">
+
+		<h1>Lab 7: Functions</h1>
+		<h2>Challenge</h2>
+		<p>For this lab, we created a Javascript function that takes user input</p>
+
+		<h2>Problems</h2>
+		<p>We only encountered problems once we reached the bonus section. Writing
+			the function to take user input, sort it, and return it was no problem.
+			However, rewriting the function to deal with spaces and uppercase/lowercase
+			was where we got in a bit over our heads. But after wrestling with arrow
+			functions and array methods for a while, we finally wrote some working
+			code that we understood.</p>
+
+		<h2>Results</h2>
+		<p>The index.html we wrote is being displayed with the css formatting we
+			wrote. Here is the program execution:</p>
+
+		<div class="code">
+			<h2>Script Output</h2>
+			<script src="js/lab.js"></script>
+		</div>
+
+		<h2>Bonus!</h2>
+		<p>1. Originally, our code put any uppercase letter before any lowercase
+			letter (e.g. "Z" went before "a"). We assume this is because numeric values
+			for uppercase ASCII characters are smaller than those for lowercase ones.
+
+			But we fixed this! Thanks to <a href="https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript">ZunTzu on stackoverflow</a>,
+			we found a couple javascript tricks to make this possible. Instead of the
+			following code to sort the text:</p>
+
+		<div class="code">
+			userNameSplit.sort();
+		</div>
+
+		<p>We used this code instead:</p>
+
+		<div class="code">
+			userNameSplit.sort((a,b) => a.localeCompare(b, undefined, {sensitivity: 'base'}))
+		</div>
+
+		<p>The sort method takes a function as an argument for how it should sort the
+			array it's given. In this case, we gave it an arrow function that compares
+			elements in a case-insensitive way.</p>
+
+		<br>
+
+		<p>2. Our code placed the spaces at the beginning of the array. We made our code
+			omit spaces by using the filter array method: </p>
+
+		<div class = "code">
+			nameFinalSpaces = userNameSplitSort.filter((value, index, arr) => value != ' ');
+		</div>
+
+		<p> This method takes an existing array and a callback function and creates
+			a new array based on what the callback function allows. Our callback
+			function allows anything that isn't an empty space. </p>
+
+
+	</div>
+
+
+</body>
+</html>
