@@ -28,13 +28,15 @@ var tmp = my_arr.map(function (x) {
 
 console.log("Array % 2:", tmp);
 
-var outputEl = document.getElementById("output");
-outputEl.innerHTML += "<p>Original array: " + my_arr.join(", ") + "</p>\n";
-outputEl.innerHTML += "<p>Square of Array: " + (my_arr.map(square)).join(", "); + "</p>\n";
-outputEl.innerHTML += "<p>Mod 2 of array: " + tmp.join(", ") + "</p>\n";
+window.onload = function(){
+  var outputEl = document.getElementById("output");
+  outputEl.innerHTML += "<p>Original array: " + my_arr.join(", ") + "</p>\n";
+  outputEl.innerHTML += "<p>Square of Array: " + (my_arr.map(square)).join(", "); + "</p>\n";
+  outputEl.innerHTML += "<p>Mod 2 of array: " + tmp.join(", ") + "</p>\n";
 
-const button = document.getElementById("button");
+  const button = document.getElementById("button");
 
-button.addEventListener('click', () => {
-  alert("You clicked me!");
-});
+  button.addEventListener('click', () => {
+    alert("You clicked me!");
+  });
+}
