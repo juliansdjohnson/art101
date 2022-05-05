@@ -25,11 +25,11 @@
 		</p>
 
 		<h2>Bonus 1</h2>
-		<p> The intial error we encountered was that we were trying to assign to a
-			variable a value that did not exist under the DOM. After moving
-			"<script src="js/lab.js"></script>" to the bottom of the html, it worked.
-			We don't totally understand the DOM, but we don't think the DOM sees
-			anything after the script tag.
+		<p> We found success displaying the output on the page by appending strings
+			to the element's innerHTML attribute. We had a problem where we were
+			using DOM elements before they were ready. We solved this by putting all
+			of the code that used the DOM elements in a callback function in the
+			window.onload() method.
 
 		<h2>Bonus 2</h2>
 		<p> We decided to make a simple button that just made a popup. We were
