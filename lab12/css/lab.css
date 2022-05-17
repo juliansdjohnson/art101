@@ -1,0 +1,58 @@
+
+#kruger-ripoff {
+  background:url(../img/scream.jpg);
+  background-size: cover;
+  position: relative;
+
+  width: 461px;
+  height: 540px;
+
+  text-align: center;
+  color: white;
+
+  margin: 30px;
+  margin-top: 0px;
+  float: left;
+
+  border: solid 10px red;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 40px; font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px; font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: white;
+}
+
+h3 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: white;
+}
